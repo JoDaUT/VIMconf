@@ -76,4 +76,5 @@ let g:solarized_termcolors=256
 let g:solarized_termtrans=0
 " download solarized theme:
 " curl https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim -o ~/.vim/colors/solarized.vim
-colorscheme solarized
+" uncomment this line to change the theme
+" colorscheme solarized
