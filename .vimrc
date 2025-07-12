@@ -66,3 +66,14 @@ set smartcase
 
 " show search count
 set shortmess-=S
+
+" Color scheme
+" TODO. Use vim-plug
+set t_Co=256
+set background=dark
+let g:solarized_termcolors=256
+" set solarized background instead of default background for terminal
+let g:solarized_termtrans=0
+" download solarized theme:
+" curl https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim -o ~/.vim/colors/solarized.vim
+colorscheme solarized
