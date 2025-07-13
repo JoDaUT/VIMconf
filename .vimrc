@@ -7,8 +7,8 @@ set mouse=a
 " Set the minimum width of the line number column
 set numberwidth=1
 
-" Use the system clipboard for yank/paste (requires +clipboard support)
-set clipboard=unnamed
+" Use the system clipboard for yank/paste (requires +clipboard support like vim-X11)
+set clipboard^=unnamed,unnamedplus
 
 " Enable syntax highlighting
 syntax enable
