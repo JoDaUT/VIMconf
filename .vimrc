@@ -1,3 +1,38 @@
+"VUNDLE SETTINGS
+
+"https://github.com/VundleVim/Vundle.vim
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'jiangmiao/auto-pairs'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+
+" CUSTOM SETTINGS
+
 " Show absolute line numbers
 set number
 
@@ -31,14 +66,14 @@ set relativenumber
 " Always show the status line, even with only one window open
 set laststatus=2
 
-" Display tab characters as 4 spaces wide. Does not convert or insert anything — it’s just visual alignment
-set tabstop=4         " A literal tab character (\t) is shown as 4 spaces
+" Display tab characters as 2 spaces wide. Does not convert or insert anything — it’s just visual alignment
+set tabstop=2         " A literal tab character (\t) is shown as 4 spaces
 
-" Auto-indent and format using 4 spaces, used with softabstop and expandtab
-" set shiftwidth=4      " Used when indenting (e.g. with >>, <<)
+" Auto-indent and format using 2 spaces, used with softabstop and expandtab
+set shiftwidth=2      " Used when indenting (e.g. with >>, <<)
 
-" Insert/delete 4 spaces when pressing Tab/Backspace in insert mode. Used combined with expandtab
-" set softtabstop=4     " Controls the "feel" of Tab in insert mode
+" Insert/delete 2 spaces when pressing Tab/Backspace in insert mode. Used combined with expandtab
+" set softtabstop=2     " Controls the "feel" of Tab in insert mode
 
 " Convert tabs to spaces when typing
 " set expandtab         " Pressing Tab inserts 4 spaces instead of a \t
