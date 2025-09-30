@@ -12,6 +12,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'altercation/vim-colors-solarized'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -103,13 +105,13 @@ set smartcase
 set shortmess-=S
 
 " Color scheme
-" TODO. Use vim-plug
 set t_Co=256
 set background=dark
 let g:solarized_termcolors=256
 " set solarized background instead of default background for terminal
 let g:solarized_termtrans=0
 " download solarized theme:
+" currently this config uses vundle to install the solarized color scheme. If Vundle is not installed, you can install it manually:
 " curl https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim -o ~/.vim/colors/solarized.vim
 " uncomment this line to change the theme
 " colorscheme solarized
